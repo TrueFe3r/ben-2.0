@@ -1,11 +1,11 @@
 """ Бен на МАКСИМАЛКАХ!))
-Команда: .ben автор @ToxicUse"""
+Команда: .ben2 автор @ToxicUse"""
 from telethon import events
 import requests
 from uniborg.util import admin_cmd
 import random as rd
 
-@borg.on(admin_cmd("ben"))
+@borg.on(admin_cmd("ben2"))
 async def _(event):
     if event.fwd_from:
         return
