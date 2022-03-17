@@ -55,7 +55,7 @@ async def _(event):
     if num == 9:
     	m = "Бэн говорит: Вчера."
     if num == 10:
-        m = "Бэн говорит: когда тебе стукнет " + str(random.randint(25, 120)
+        m = "Бэн говорит: когда тебе стукнет " + str(rd.randint(25, 120)
     await borg.send_message(
         event.chat_id,
         m,
