@@ -2,7 +2,7 @@
 from telethon import events
 import requests
 from uniborg.util import admin_cmd
-import random as rd
+import random as rd 
 
 @borg.on(admin_cmd("ben2"))
 async def _(event):
@@ -35,6 +35,7 @@ async def _(event):
     if event.reply_to_msg_id:
         message_id = event.reply_to_msg_id
     num = rd.randint(1, 10)
+    age = rd.randint(25, 120)
     if num == 1:
         m = "Бен говорит: Через 10 минут."
     if num == 2:
@@ -54,7 +55,7 @@ async def _(event):
     if num == 9:
     	m = "Бэн говорит: Вчера."
     if num == 10:
-    	m = "Бэн говорит: Когда тебе стукнет 72."
+        m = "Бэн говорит: когда тебе стукнет " + str(random.randint(25, 120)
     await borg.send_message(
         event.chat_id,
         m,
